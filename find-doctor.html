@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctors - Medbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Medbook</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="find-doctor.html" class="active">Find Doctors</a>
+                    <a href="specialties.html">Specialties</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find the Right Doctor for You</h1>
+            <p>Search from our network of verified healthcare providers</p>
+        </div>
+    </section>
+
+    <!-- Search Filters -->
+    <section class="section">
+        <div class="container">
+            <div class="search-filters">
+                <div class="filter-group">
+                    <label for="specialtyFilter">Specialty</label>
+                    <select id="specialtyFilter">
+                        <option value="">All Specialties</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dentistry">Dentistry</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="orthopedics">Orthopedics</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="locationFilter">Location</label>
+                    <select id="locationFilter">
+                        <option value="">All Locations</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="houston">Houston</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="availabilityFilter">Availability</label>
+                    <select id="availabilityFilter">
+                        <option value="">Any Time</option>
+                        <option value="today">Today</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="this-week">This Week</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="insuranceFilter">Insurance</label>
+                    <select id="insuranceFilter">
+                        <option value="">All Insurance</option>
+                        <option value="blue-cross">Blue Cross</option>
+                        <option value="aetna">Aetna</option>
+                        <option value="cigna">Cigna</option>
+                        <option value="united">United Healthcare</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="applyFilters">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors List -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-subtitle">Available Doctors</h2>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Cardiologist</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (128 reviews)</span>
+                        </div>
+                        <p class="availability">Next available: Tomorrow</p>
+                        <button class="btn btn-primary">Book Appointment</button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="specialty">Dermatologist</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (94 reviews)</span>
+                        </div>
+                        <p class="availability">Next available: Today</p>
+                        <button class="btn btn-primary">Book Appointment</button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="specialty">Pediatrician</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Chicago, IL</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (156 reviews)</span>
+                        </div>
+                        <p class="availability">Next available: This Week</p>
+                        <button class="btn btn-primary">Book Appointment</button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Wilson</h3>
+                        <p class="specialty">Neurologist</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (87 reviews)</span>
+                        </div>
+                        <p class="availability">Next available: Tomorrow</p>
+                        <button class="btn btn-primary">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer as index.html -->
+                <div class="footer-column">
+                    <h3>Medbook</h3>
+                    <p>Your trusted platform for medical appointment booking and healthcare management.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-doctor.html">Find Doctors</a></li>
+                        <li><a href="specialties.html">Specialties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Patients</h3>
+                    <ul class="footer-links">
+                        <li><a href="find-doctor.html">Search for Doctors</a></li>
+                        <li><a href="signup.html">Create Account</a></li>
+                        <li><a href="login.html">Patient Login</a></li>
+                        <li><a href="#">Health Articles</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@medbook.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Medbook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

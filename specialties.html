@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Specialties - Medbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Medbook</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="find-doctor.html">Find Doctors</a>
+                    <a href="specialties.html" class="active">Specialties</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Medical Specialties</h1>
+            <p>Find the right specialist for your healthcare needs</p>
+        </div>
+    </section>
+
+    <!-- Specialties Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="specialties-grid">
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Specialists in heart and cardiovascular system conditions, including heart disease, hypertension, and arrhythmias.</p>
+                    <a href="find-doctor.html?specialty=cardiology" class="btn btn-outline">Find Cardiologists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Dentistry</h3>
+                    <p>Oral health specialists providing dental care, cleanings, fillings, and other dental procedures.</p>
+                    <a href="find-doctor.html?specialty=dentistry" class="btn btn-outline">Find Dentists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>Experts in nervous system disorders, including brain, spinal cord, and nerve conditions.</p>
+                    <a href="find-doctor.html?specialty=neurology" class="btn btn-outline">Find Neurologists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>Healthcare for infants, children, and adolescents, focusing on their physical and mental development.</p>
+                    <a href="find-doctor.html?specialty=pediatrics" class="btn btn-outline">Find Pediatricians</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Ophthalmology</h3>
+                    <p>Eye care specialists treating vision problems, eye diseases, and performing eye surgeries.</p>
+                    <a href="find-doctor.html?specialty=ophthalmology" class="btn btn-outline">Find Ophthalmologists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedics</h3>
+                    <p>Specialists in musculoskeletal system, treating bones, joints, ligaments, tendons, and muscles.</p>
+                    <a href="find-doctor.html?specialty=orthopedics" class="btn btn-outline">Find Orthopedists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Pulmonology</h3>
+                    <p>Respiratory system specialists treating lung diseases, asthma, COPD, and sleep disorders.</p>
+                    <a href="find-doctor.html?specialty=pulmonology" class="btn btn-outline">Find Pulmonologists</a>
+                </div>
+
+                <div class="specialty-detail-card">
+                    <div class="specialty-icon large">
+                        <i class="fas fa-allergies"></i>
+                    </div>
+                    <h3>Allergy & Immunology</h3>
+                    <p>Specialists in allergic conditions, asthma, and immune system disorders.</p>
+                    <a href="find-doctor.html?specialty=allergy" class="btn btn-outline">Find Allergists</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Same footer as index.html -->
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Medbook</h3>
+                    <p>Your trusted platform for medical appointment booking and healthcare management.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-doctor.html">Find Doctors</a></li>
+                        <li><a href="specialties.html">Specialties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Patients</h3>
+                    <ul class="footer-links">
+                        <li><a href="find-doctor.html">Search for Doctors</a></li>
+                        <li><a href="signup.html">Create Account</a></li>
+                        <li><a href="login.html">Patient Login</a></li>
+                        <li><a href="#">Health Articles</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@medbook.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Medbook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

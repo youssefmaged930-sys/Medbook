@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Medbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Medbook</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="find-doctor.html">Find Doctors</a>
+                    <a href="specialties.html">Specialties</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Log In</a>
+                    <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form">
+                    <h2>Create Your Account</h2>
+                    <p>Join thousands of patients managing their healthcare with Medbook</p>
+                    
+                    <form id="signupForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                            <div class="password-strength">
+                                <div class="strength-bar"></div>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark"></span>
+                                Send me health tips and appointment reminders
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                    </form>
+                    
+                    <div class="auth-divider">
+                        <span>Or sign up with</span>
+                    </div>
+                    
+                    <div class="social-auth">
+                        <button class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                        <button class="btn btn-social btn-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-switch">
+                        <p>Already have an account? <a href="login.html">Sign in here</a></p>
+                    </div>
+                </div>
+                
+                <div class="auth-side">
+                    <div class="auth-features">
+                        <div class="auth-feature">
+                            <i class="fas fa-search"></i>
+                            <h3>Find the Right Doctor</h3>
+                            <p>Search by specialty, location, availability, and patient reviews</p>
+                        </div>
+                        <div class="auth-feature">
+                            <i class="fas fa-clock"></i>
+                            <h3>Book 24/7</h3>
+                            <p>Schedule appointments anytime, anywhere with our easy booking system</p>
+                        </div>
+                        <div class="auth-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Your Data is Secure</h3>
+                            <p>We use industry-leading security to protect your health information</p>
+                        </div>
+                        <div class="auth-feature">
+                            <i class="fas fa-video"></i>
+                            <h3>Virtual Consultations</h3>
+                            <p>Connect with healthcare providers from the comfort of your home</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Same footer as index.html -->
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Medbook</h3>
+                    <p>Your trusted platform for medical appointment booking and healthcare management.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-doctor.html">Find Doctors</a></li>
+                        <li><a href="specialties.html">Specialties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Patients</h3>
+                    <ul class="footer-links">
+                        <li><a href="find-doctor.html">Search for Doctors</a></li>
+                        <li><a href="signup.html">Create Account</a></li>
+                        <li><a href="login.html">Patient Login</a></li>
+                        <li><a href="#">Health Articles</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare St, Medical City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@medbook.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Medbook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

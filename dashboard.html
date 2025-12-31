@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - Medbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Medbook</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="find-doctor.html">Find Doctors</a>
+                    <a href="specialties.html">Specialties</a>
+                    <a href="about.html">About</a>
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                </div>
+                <div class="auth-buttons">
+                    <span id="userWelcome" style="margin-right: 15px;"></span>
+                    <button id="logoutBtn" class="btn btn-outline">Log Out</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Dashboard</h1>
+            <p>Manage your appointments and health information</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3 id="totalAppointments">0</h3>
+                    <p>Total Appointments</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="upcomingAppointments">0</h3>
+                    <p>Upcoming</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="completedAppointments">0</h3>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h2 class="section-subtitle">My Appointments</h2>
+                <div class="appointments-table-container">
+                    <table class="appointments-table">
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Specialty</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentsTableBody">
+                            <!-- Appointments will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h2 class="section-subtitle">Quick Actions</h2>
+                <div class="quick-actions">
+                    <a href="find-doctor.html" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Find a Doctor
+                    </a>
+                    <a href="#" class="btn btn-outline" id="bookNewBtn">
+                        <i class="fas fa-calendar-plus"></i> Book New Appointment
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-file-medical"></i> View Medical Records
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as other pages) -->
+    <footer>
+        <!-- Same footer content as other pages -->
+    </footer>
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
